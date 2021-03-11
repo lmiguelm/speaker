@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="shortcut icon" href="./assets/alto-falante.svg" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;1,400;1,600&display=swap" rel="stylesheet">
+    <title>Speaker</title>
+    <link rel="stylesheet" href="./styles.css">
+  </head>
+
+  <body>
+    <header>
+      <h1>Speaker</h1>
+      <select id="language">
+        <option value="pt-BR">Brasil</option>
+        <option value="en-US">English</option>
+      </select>
+    </header>
+    <div id="main">
+      <p>Informe o texto que deseja ouvir: </p>
+      <textarea name="text"></textarea>
+      <footer>
+        <button onclick="cancel()">Cancelar</button>
+          <select id="rate">
+            <option>Velocidade da voz</option>
+            <option value="1" >1x</option>
+            <option value="2">2x</option>
+            <option value="3">3x</option>
+          </select>
+        <button onclick="play()">Ouvir</button>
+      </footer>
+    </div>
+  </body>
+  <script src="/script.js"></script>
+</html>
